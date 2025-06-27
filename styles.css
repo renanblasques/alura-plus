@@ -5,7 +5,7 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
-    --fonte-padrao: 
+    --fonte-padrao: "Inter", sans-serif;
 }
 
 * {
@@ -18,20 +18,26 @@ a {
     color: var(--branco-principal);
 }
 
+button {
+    font-family: var(--fonte-padrao);
+}
+
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-    font-family: "Inter", sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
 .principal {
     background-image: url("assets/imgs/Background.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .container {
     height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 .container_pequeno {
@@ -49,8 +55,8 @@ body {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding: 125px 0 0 54px;
-    width: 588px;
+    padding-left: 100px;
+    width: 700px;
     height: 431px;
 }
 
@@ -115,7 +121,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 90px;
-    margin: 0 165px;
+    margin: 0 200px;
 }
 
 .info_padrao {
